@@ -45,7 +45,7 @@ void AdminWindow::on_pushButton_ShowAllUsers_clicked()
             ui->tableWidget_ShowAll->setItem(i, 2, new QTableWidgetItem(QString::fromStdString(students[i].getSurname())));
             ui->tableWidget_ShowAll->setItem(i, 3, new QTableWidgetItem(QString::fromStdString(students[i].getEmail())));
             ui->tableWidget_ShowAll->setItem(i, 4, new QTableWidgetItem(QString::fromStdString(students[i].getRole())));
-            ui->tableWidget_ShowAll->setItem(i, 5, new QTableWidgetItem(QString::fromStdString(students[i].getRole())));
+            ui->tableWidget_ShowAll->setItem(i, 5, new QTableWidgetItem(QString::fromStdString(students[i].getPassword())));
         }
         ui->tableWidget_ShowAll->sortByColumn(0, Qt::AscendingOrder);
     }
