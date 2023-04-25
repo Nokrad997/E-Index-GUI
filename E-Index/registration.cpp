@@ -62,10 +62,6 @@ void Registration::on_pushButton_clicked()
                 }
             }
         }
-        else
-        {
-            throw runtime_error("couldnt open a file");
-        }
 
         file.close();
     }
@@ -76,9 +72,6 @@ void Registration::on_pushButton_clicked()
     }
 
     id = p1.getId() + 1;
-
-
-
 
     p1.setId(id);
     p1.setName(ui->lineEdit_Name->text().toStdString());

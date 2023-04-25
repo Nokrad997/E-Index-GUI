@@ -56,10 +56,6 @@ void AddTeacher::on_pushButton_clicked()
                 }
             }
         }
-        else
-        {
-            throw runtime_error("couldnt open a file");
-        }
 
         file.close();
     }
